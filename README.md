@@ -1,5 +1,6 @@
-# interprete
+## 📝 Código completo
 
+```python
 import tkinter as tk
 from tkinter import Toplevel, PhotoImage
 import re
@@ -1183,10 +1184,6 @@ Aplicaciones en:
         command=ventana.destroy
     ).pack(side="left", padx=5)
 
-
-
-
-
 # =========================
 # SECCION GENERADOR (NUEVA)
 # =========================
@@ -1413,7 +1410,7 @@ def abrir_generador():
                 f"{a}+++{b}",  # Múltiples operadores
                 f"({a}+{b}",  # Anidación sin cerrar
                 f"{a}+-{b}",  # Operadores consecutivos
-                f"(({a}+{b}))*{c}"   # ✅ CORRECTO,  # Paréntesis mal balanceados
+                f"(({a}+{b}))*{c}"   # Paréntesis mal balanceados
             ]
             return random.choice(errores)
 
@@ -1672,9 +1669,8 @@ header.pack(fill="x", pady=0)
 header.pack_propagate(False)
 
 # Línea decorativa superior
-linea_top = tk.Frame(header, bg="#864CBF", height=3)
+linea_top = tk.Frame(header, bg="##864CBF", height=3)
 linea_top.pack(fill="x")
-
 # Frame interno del header
 header_interno = tk.Frame(header, bg="#0D0520")
 header_interno.pack(fill="both", expand=True, padx=20, pady=15)
